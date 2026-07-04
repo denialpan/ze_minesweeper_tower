@@ -1,0 +1,30 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+    //Example music file that references a sound file named "example.mp3" located in "Counter-Strike Global Offensive\content\csgo_addons\testaddon\sounds\music\"
+	sfx.ff7button = 
+    {
+        type = "csgo_mega"
+        volume = 2.5
+        volume_convar = "snd_musicvolume"
+        pitch = 1.0
+        mixgroup = "Ambient"
+        use_distance_volume_mapping_curve = true
+        vsnd_files_track_01 = "sounds/ff7cursor.vsnd"
+        distance_volume_mapping_curve = 
+        [
+            [
+                0, 50.0, -0.002544, -0.002544,
+                2.0, 3.0,
+            ],
+            [
+                1000, 0.5, -0.000604, -0.000604,
+                2.0, 3.0,
+            ],
+            [
+                1500, 0.0, -0.000604, -0.000604,
+                2.0, 3.0,
+            ],
+        ]
+        vsnd_duration = 0.650167
+    }
+}
