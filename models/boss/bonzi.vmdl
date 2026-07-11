@@ -57,7 +57,7 @@
 				[
 					{
 						_class = "AnimFile"
-						name = "bonzi_animation"
+						name = "test_animation"
 						is_default_idle_anim = false
 						activity_name = ""
 						activity_weight = 1
@@ -80,13 +80,37 @@
 						reverse = false
 						additional_anim_files = [  ]
 					},
+					{
+						_class = "AnimFile"
+						name = "test_animation_2"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/boss/test_animation_2.fbx"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
 				]
 				default_root_bone_name = ""
 			},
 		]
 		model_archetype = "animated_model"
 		primary_associated_entity = "prop_dynamic"
-		anim_graph_name = ""
 		document_sub_type = "ModelDocSubType_None"
 	}
 }
