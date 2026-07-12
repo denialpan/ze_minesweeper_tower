@@ -2,3 +2,10 @@
 /maps/content_examples
 scripts/List of Entities - Valve Developer Community.htm
 scripts/List of entities (Source 2) - Valve Developer Community.htm
+scripts/Particle System Constraints - Valve Developer Community.htm
+.gitignore
+scripts/Particle System Initializers - Valve Developer Community.htm
+scripts/Particle System Renderers - Valve Developer Community.htm
+scripts/Particle System Operators - Valve Developer Community.htm
+scripts/Particle System Forces - Valve Developer Community.htm
+scripts/Particle System Emitters - Valve Developer Community.htm
