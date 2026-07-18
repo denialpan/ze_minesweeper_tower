@@ -2,14 +2,14 @@
 
 Layer0
 {
-	shader "csgo_static_overlay.vfx"
+	shader "csgo_simple.vfx"
+
+	//---- Ambient Occlusion ----
+	TextureAmbientOcclusion ""
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_flTexCoordRotation "0.000"
-	g_fTextureColorBrightness "1.000"
-	g_fTextureColorContrast "1.000"
-	g_fTextureColorSaturation "1.000"
 	g_nScaleTexCoordUByModelScaleAxis "0" // None
 	g_nScaleTexCoordVByModelScaleAxis "0" // None
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
@@ -17,13 +17,44 @@ Layer0
 	g_vTexCoordOffset "[0.000 0.000]"
 	g_vTexCoordScale "[1.000 1.000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
-	g_vTextureColorCorrectionTint "[1.000000 1.000000 1.000000 0.000000]"
 	TextureColor "materials/ddd/windows_98/maximize.png"
 
 	//---- Fog ----
 	g_bFogEnabled "1"
 
+	//---- Lighting ----
+	g_flMetalness "0.000"
+	TextureRoughness ""
+
+	//---- Normal Map ----
+	TextureNormal ""
+
 	//---- Texture Address Mode ----
 	g_nTextureAddressModeU "0" // Wrap
 	g_nTextureAddressModeV "0" // Wrap
+
+
+	VariableState
+	{
+		"Ambient Occlusion"
+		{
+		}
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Lighting"
+		{
+			"Roughness" 0
+			"Metalness" 0
+		}
+		"Normal Map"
+		{
+		}
+		"Texture Address Mode"
+		{
+		}
+	}
 }
