@@ -38,6 +38,7 @@
 						surface_prop = "Wood_Plank"
 						collision_prop = "default"
 						tool_material = ""
+						hitgroupname = "HITGROUP_GENERIC"
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 0.0, 0.0 ]
@@ -46,9 +47,9 @@
 						faceMergeAngle = 5.0
 						maxHullVertices = 9
 						import_mode = "HullPerElement"
-						small_element_threshold = 0.0
-						thin_element_threshold = 2.47
-						optimization_algorithm = "QEM"
+						small_element_threshold = 20.2
+						thin_element_threshold = 2.79
+						optimization_algorithm = "Exact"
 						disable_region_svm = false
 						import_filter = 
 						{
