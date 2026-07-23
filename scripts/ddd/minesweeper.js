@@ -923,7 +923,7 @@ function getAnchorOrigin(anchorName) {
     return {
         x: origin.x,
         y: origin.y,
-        z: origin.z + 64
+        z: origin.z
     };
 }
 
@@ -1025,6 +1025,21 @@ Instance.OnScriptInput("start_board_2", () => {
         getAnchorOrigin("board_2"),
         4,
         30,
+        10,
+        "secondary_hurt_1_10hp",    // mine hit but board continues
+        "hurt_1_100hp",             // mine hit ends board
+        2                           // max allowed failures
+    );
+
+    ensureThinkStarted();
+});
+
+Instance.OnScriptInput("stage_0_board_1", () => {
+    initializeBoardAt(
+        "minesweeper_board_spawn_stage_0",
+        getAnchorOrigin("minesweeper_board_spawn_stage_0"),
+        9,
+        9,
         10,
         "secondary_hurt_1_10hp",    // mine hit but board continues
         "hurt_1_100hp",             // mine hit ends board
