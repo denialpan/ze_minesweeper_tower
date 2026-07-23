@@ -923,7 +923,7 @@ function getAnchorOrigin(anchorName) {
     return {
         x: origin.x,
         y: origin.y,
-        z: origin.z
+        z: origin.z + 64
     };
 }
 
